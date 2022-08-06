@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 10 Coding Assignment</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body class="container">
+    <br>
+    <h1 class="text-center">Add To Vehicle Inventory</h1>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div id="my-input" class="form-group"></div>
+                    <label for="new-vehicle-make">Vehicle Make</label>
+                    <input type="text" class="form-control" id="new-vehicle-make" placeholder="Make">
+                </div>
+				
+				<!-- working on adding dropdown menus of car data -->
+				<!-- <div class="input-group mb-3">
+					<label class="input-group-text" for="inputGroupSelect01">Vehicle Make</label>
+					<select class="form-select" id="inputGroupSelect01">
+						<option selected>Choose...</option>
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+					</select>
+				</div> -->
+
+                <div class="col-sm">
+                    <div class="form-group"></div>
+                    <label for="new-vehicle-model">Vehicle Model</label>
+                    <input type="text" class="form-control" id="new-vehicle-model" placeholder="Model">
+                </div>
+                <div class="col-sm">
+                    <div class="form-group"></div>
+                    <label for="new-vehicle-year">Vehicle Year</label>
+                    <input type="text" class="form-control" id="new-vehicle-year" placeholder="Year">
+                </div>
+            </div>
+            <br>
+            <button id="add" class="btn btn-primary form-control">Add</button>
+        </div>
+        <h2 class="container text-center">Current Vehicle Inventory</h2>
+    </div>
+	<br>
+    <table id="vehicle-table" class="table table-light table-striped">
+        <tr>
+            <th>Car Make</th>
+            <th>Car Model</th>
+            <th>Vehicle Year</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+
+    <script src="index.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
